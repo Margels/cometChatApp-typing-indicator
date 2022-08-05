@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-CometChatSwift/Pods-CometChatSwift-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CometChatCalls/CometChatProCalls.framework/CometChatProCalls
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CometChatPro/CometChatPro.framework/CometChatPro
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CometChatPro/Starscream.framework/Starscream
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CometChatWebRTC/WebRTC.framework/WebRTC
