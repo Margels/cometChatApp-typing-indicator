@@ -31,3 +31,13 @@ https://user-images.githubusercontent.com/89708428/182644537-e5084267-ecb0-48b7-
 
 * the typing indicator is made entirely via UIKit
 * the chat notifications are handled via [CometChat](https://www.cometchat.com/?gspk=bmlja2RhbmllbGU&gsxid=9ms4MwWYKW57)
+
+<br>
+<br>
+<br>
+
+## Instructions:
+
+* Download the ZIP folder and wait for the download to complete,
+* Open the terminal and run `pod install` to the project you want to work on,
+* Follow the instructions on the tutorial.
