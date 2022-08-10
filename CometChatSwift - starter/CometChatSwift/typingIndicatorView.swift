@@ -10,6 +10,21 @@ import UIKit
 
 class typingIndicatorView: UIView {
 
+    // init
+    init() {
+        super.init(frame: .zero)
+        // createView()
+    }
     
+    // define view content size
+    override var intrinsicContentSize: CGSize {
+    	stack.intrinsicContentSize
+        
+    }
+
+    required init?(coder: NSCoder) {
+    	fatalError()
+    }
+
 
 }
