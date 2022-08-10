@@ -16,7 +16,8 @@ class typingIndicatorView: UIView {
         // size, scale etc of each dot
         static let size: CGFloat = 7
         static let scaleDuration: Double = 1
-        static let scaleAmount: Double = 0.4
+        static let opacityAmount: Double = 0.4
+        static let scaleAmount: Double = 1.2
         static let delayBetweenRepeats: Double = 0.7
         
      }
@@ -133,7 +134,7 @@ class typingIndicatorView: UIView {
         // first animation: fluctuating opacity
         let animation = CABasicAnimation(keyPath: "opacity")
         animation.duration = Constants.scaleDuration / 2
-        animation.toValue = Constants.scaleAmount
+        animation.toValue = Constants.opacityAmount
         animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation.autoreverses = true
@@ -141,7 +142,7 @@ class typingIndicatorView: UIView {
         // second animation: scaling up & down
         let animation2 = CABasicAnimation(keyPath: "transform.scale")
         animation2.duration = Constants.scaleDuration / 2
-        animation2.toValue = 1.2
+        animation2.toValue = Constants.scaleAmount
         animation2.isRemovedOnCompletion = false
         animation2.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
         animation2.autoreverses = true
