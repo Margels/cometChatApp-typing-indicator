@@ -75,13 +75,8 @@ class typingIndicatorView: UIView {
         
         // define and activate constraints
         NSLayoutConstraint.activate([
-            // bubble constraints
-            bubble.leadingAnchor.constraint(equalTo: leadingAnchor),
-            bubble.trailingAnchor.constraint(equalTo: trailingAnchor),
-            bubble.topAnchor.constraint(equalTo: topAnchor),
-            bubble.bottomAnchor.constraint(equalTo: bottomAnchor),
             // stack constraints
-            stack.leadingAnchor.constraint(equalTo: bubble.leadingAnchor, constant: 11),
+            stack.centerXAnchor.constraint(equalTo: bubble.centerXAnchor, constant: 2.5),
             stack.centerYAnchor.constraint(equalTo: bubble.centerYAnchor)
         ])
         
