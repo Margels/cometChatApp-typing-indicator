@@ -73,13 +73,6 @@ class typingIndicatorView: UIView {
     // define constraints of the views
     func createConstraints(bubble: UIView, stack: UIView) {
         
-        // bubble width using dots width and spacing
-        let bubbleWidth = (Constants.size * 3) + (5 * 2) + (5 * 3)
-        
-        // stack width using dots width and spacint
-        let stackWidth: CGFloat = ((7*3)+(5*2))
-        print("anchor:", (bubbleWidth-stackWidth))
-        
         // define and activate constraints
         NSLayoutConstraint.activate([
             // bubble constraints
