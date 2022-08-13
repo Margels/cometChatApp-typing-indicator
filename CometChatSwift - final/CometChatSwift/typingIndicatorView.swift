@@ -103,7 +103,7 @@ class typingIndicatorView: UIView {
         // create the view
         let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width:  width, height: height)))
         view.layer.cornerRadius = view.frame.size.height / 2
-        view.backgroundColor = UIColor(white: 0.9, alpha: 1)
+        view.backgroundColor = UIColor(named: "typingIndicatorBackground")
         view.widthAnchor.constraint(equalToConstant: width).isActive = true
         view.heightAnchor.constraint(equalToConstant: height).isActive = true
         return view
