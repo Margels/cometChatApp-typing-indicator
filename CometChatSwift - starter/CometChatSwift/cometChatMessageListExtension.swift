@@ -34,13 +34,11 @@ extension CometChatMessageList {
             guard let strongSelf = self else { return }
             if typingDetails.sender?.uid == strongSelf.currentUser?.uid && typingDetails.receiverType == .user {
                 
-                
-                
+                // show typing indicator for 1-to-1 conversations
                 
             } else if typingDetails.receiverType == .group  && typingDetails.receiverID == strongSelf.currentGroup?.guid {
                 
-                
-                
+                // show typing indicator in group conversations
                     
                 }
             }
@@ -62,12 +60,11 @@ extension CometChatMessageList {
             
             if typingDetails.sender?.uid == strongSelf.currentUser?.uid && typingDetails.receiverType == .user{
                 
-                 
+                 // hide typing indicator for 1-to-1 conversations
                 
             } else if typingDetails.receiverType == .group  && typingDetails.receiverID == strongSelf.currentGroup?.guid {
                 
-                
-                
+                // hide typing indicator in group conversations
                 
             }
         }
