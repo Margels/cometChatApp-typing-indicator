@@ -41,7 +41,7 @@ extension CometChatMessageList {
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.spacing = 5
         NSLayoutConstraint.activate([
-            sv.leadingAnchor.constraint(equalTo: typingIndicatorBubble.trailingAnchor, constant: 10),
+            sv.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
             sv.heightAnchor.constraint(equalTo: typingIndicatorBubble.heightAnchor),
             sv.centerYAnchor.constraint(equalTo: typingIndicatorBubble.centerYAnchor),
             sv.widthAnchor.constraint(greaterThanOrEqualToConstant: 20)
