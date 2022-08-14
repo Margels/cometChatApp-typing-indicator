@@ -38,7 +38,7 @@ class typingIndicatorView: UIView {
     }
     
     // create view
-    private func createView() {
+    func createView() {
         
         translatesAutoresizingMaskIntoConstraints = false
         
