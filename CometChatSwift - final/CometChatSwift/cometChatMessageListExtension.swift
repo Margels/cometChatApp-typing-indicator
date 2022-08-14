@@ -21,18 +21,14 @@ extension CometChatMessageList {
         
     }
     
-    private func createTypingIndicator() -> typingIndicatorView {
+    func createTypingIndicator() -> typingIndicatorView {
         let typingIndicator = typingIndicatorView()
         typingIndicator.alpha = 0
         view.insertSubview(typingIndicator, belowSubview: textView)
-        var typingIndicatorBottomConstraint = typingIndicator.constraints.first(where: { $0.firstAttribute == .bottom  })
-        typingIndicatorBottomConstraint = typingIndicator.bottomAnchor.constraint(
-            equalTo: textView.topAnchor,
-         constant: -16)
-        typingIndicatorBottomConstraint?.isActive = true
         NSLayoutConstraint.activate([
          typingIndicator.heightAnchor.constraint(equalToConstant: 30),
-         typingIndicator.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25)
+         typingIndicator.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
+         typingIndicator.bottomAnchor.constraint(equalTo: textView.topAnchor, constant: -16)
         ])
         return typingIndicator
     }
